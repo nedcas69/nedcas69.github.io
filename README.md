@@ -1,4 +1,4 @@
-# This is our test of using git flow through building django app with templates
+# This is our test of using git flow through building html langing page template
 
 ---
 
