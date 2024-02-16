@@ -11,13 +11,17 @@
     />
     <meta name="description" content="Free Luxury Watch Landing Page" />
 
-    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Mirza:wght@400;500;600;700&display=swap"
       rel="stylesheet"
+      type="text/css"
+      href="static/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" type="text/css" href="static/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body
     class="bg-body"
@@ -282,7 +286,7 @@
         <div class="row">
           <div class="col-lg-7 col-md-6">
             <div class="banner-content py-lg-12">
-              <h1 class="display-1 pb-4">
+              <h1 class="display-1 pb-4 text-secondary">
                 Perfect <span class="text-primary">Watch</span> for perfect
                 people.
               </h1>
@@ -292,7 +296,7 @@
               </p>
               <a
                 href="shop.html"
-                class="btn btn-lg btn-outline-dark btn-bg-light text-uppercase mt-3 rounded-pill fw-bold"
+                class="btn btn-lg btn-outline-dark btn-bg-light text-uppercase mt-3 fw-bold"
                 >Order now!
               </a>
             </div>
@@ -351,8 +355,8 @@
         </div>
       </div>
     </section>
-    <section id="video-player" class="video bg-gray-8 py-lg-8">
-      <div class="container-lg">
+    <section id="video-player" class="video bg-dark py-2">
+      <div class="container">
         <div class="row">
           <div class="col-lg-8 text-center mx-auto">
             <div class="display-header text-light">
@@ -364,24 +368,16 @@
               </p>
             </div>
           </div>
-          <div class="video-content position-relative mt-5">
-            <div class="video-bg">
-              <img
-                src="static/img/video-item.jpg"
-                alt="video"
-                class="img-fluid"
-              />
-            </div>
-            <div class="video-player">
-              <a
-                class="youtube play-btn position-absolute d-flex justify-content-center align-items-center"
-                href="https://www.youtube.com/watch?v=O9w2f43JLJ0"
-              >
-                <svg class="play text-light" width="120" height="120">
-                  <use xlink:href="#play"></use>
-                </svg>
-              </a>
-            </div>
+          <div class="video-content position-relative">
+            <iframe
+              width="100%"
+              height="360"
+              src="https://www.youtube.com/embed/bfW6dzCFy2A?si=JXUbGgit69XU1d3x"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
       </div>
@@ -544,7 +540,7 @@
             <div class="col-lg-4 col-md-6 mb-5">
               <div class="product-card">
                 <div class="image-holder position-relative">
-                  <a href="#">
+                  <a href="#" class="void-link">
                     <img
                       src="static/img/product-item1.jpg"
                       alt="product-item"
@@ -572,8 +568,8 @@
                   </div>
                 </div>
                 <div class="card-detail">
-                  <h3 class="card-title fs-3 mb-2 mt-2">
-                    <a href="single-product.html">Superior Craftsmanship</a>
+                  <h3 class="card-title fs-3 mb-2 mt-2 void-link">
+                    <a href="#" class="void-link">Superior Craftsmanship</a>
                   </h3>
                   <p>
                     Each Reddy watch is meticulously crafted with precision and
@@ -586,7 +582,7 @@
             <div class="col-lg-4 col-md-6 mb-5">
               <div class="product-card">
                 <div class="image-holder position-relative">
-                  <a href="#">
+                  <a href="#" class="void-link">
                     <img
                       src="static/img/product-item2.jpg"
                       alt="product-item"
@@ -615,7 +611,7 @@
                 </div>
                 <div class="card-detail">
                   <h3 class="card-title fs-3 mb-2 mt-2">
-                    <a href="single-product.html">Attention to Detail</a>
+                    <a href="#" class="void-link">Attention to Detail</a>
                   </h3>
                   <p>
                     Every aspect of the Reddy watch showcases meticulous
@@ -628,7 +624,7 @@
             <div class="col-lg-4 col-md-6 mb-5">
               <div class="product-card">
                 <div class="image-holder position-relative">
-                  <a href="#">
+                  <a href="#" class="void-link">
                     <img
                       src="static/img/product-item3.jpg"
                       alt="product-item"
@@ -657,7 +653,7 @@
                 </div>
                 <div class="card-detail">
                   <h3 class="card-title fs-3 mb-2 mt-2">
-                    <a href="single-product.html"
+                    <a href="#" class="void-link"
                       >Elegant and Timeless Design</a
                     >
                   </h3>
@@ -672,7 +668,7 @@
             <div class="col-lg-4 col-md-6 mb-5">
               <div class="product-card">
                 <div class="image-holder position-relative">
-                  <a href="#">
+                  <a href="#" class="void-link">
                     <img
                       src="static/img/product-item4.jpg"
                       alt="product-item"
@@ -701,7 +697,7 @@
                 </div>
                 <div class="card-detail">
                   <h3 class="card-title fs-3 mb-2 mt-2">
-                    <a href="single-product.html">Comfortable Fit</a>
+                    <a href="#" class="void-link">Comfortable Fit</a>
                   </h3>
                   <p>
                     Designed with wearer comfort in mind, the Reddy watch offers
@@ -714,7 +710,7 @@
             <div class="col-lg-4 col-md-6 mb-5">
               <div class="product-card">
                 <div class="image-holder position-relative">
-                  <a href="#">
+                  <a href="#" class="void-link">
                     <img
                       src="static/img/product-item5.jpg"
                       alt="product-item"
@@ -743,7 +739,7 @@
                 </div>
                 <div class="card-detail">
                   <h3 class="card-title fs-3 mb-2 mt-2">
-                    <a href="single-product.html">Water-Resistance</a>
+                    <a href="#" class="void-link">Water-Resistance</a>
                   </h3>
                   <p>
                     The Reddy watch is water-resistant, providing protection
@@ -756,7 +752,7 @@
             <div class="col-lg-4 col-md-6 mb-5">
               <div class="product-card">
                 <div class="image-holder position-relative">
-                  <a href="#">
+                  <a href="#" class="void-link">
                     <img
                       src="static/img/product-item6.jpg"
                       alt="product-item"
@@ -785,7 +781,7 @@
                 </div>
                 <div class="card-detail">
                   <h3 class="card-title fs-3 mb-2 mt-2">
-                    <a href="single-product.html">Interchangeable Straps</a>
+                    <a href="#" class="void-link">Interchangeable Straps</a>
                   </h3>
                   <p>
                     Customize your Reddy watch to match your personal style and
@@ -914,11 +910,11 @@
                   <ul class="text-light list-unstyled">
                     <li class="pb-3">
                       <strong>Watch Model:</strong>
-                      <a href="#" class="text-light">Reddy Watch</a>
+                      <span class="text-light fw-bold">Reddy Watch</span>
                     </li>
                     <li class="pb-3">
                       <strong>Price:</strong>
-                      <a href="#" class="text-light">$2000.00</a>
+                      <span class="text-light fw-bold">$2000.00</span>
                     </li>
                     <li class="color-product-options pb-3">
                       <div class="color-toggle d-flex" data-option-index="0">
@@ -931,7 +927,7 @@
                           title="Cement"
                         >
                           <span
-                            class="color-inner d-block rounded-pill"
+                            class="color-inner d-block"
                             style="background-color: #aba194"
                           ></span>
                         </div>
@@ -941,7 +937,7 @@
                           title="Reddish Brown"
                         >
                           <span
-                            class="color-inner d-block rounded-pill"
+                            class="color-inner d-block"
                             style="background-color: #812013"
                           ></span>
                         </div>
@@ -951,7 +947,7 @@
                           title="Woody Brown"
                         >
                           <span
-                            class="color-inner d-block rounded-pill"
+                            class="color-inner d-block"
                             style="background-color: #4a3937"
                           ></span>
                         </div>
@@ -960,10 +956,7 @@
                   </ul>
                 </div>
                 <div class="product-quantity">
-                  <div
-                    class="input-group product-qty me-3 border rounded-2"
-                    style="max-width: 130px"
-                  >
+                  <div class="input-group product-qty">
                     <span class="input-group-btn bg-gray-2">
                       <button
                         type="button"
@@ -980,10 +973,11 @@
                       type="text"
                       id="quantity"
                       name="quantity"
-                      class="form-control input-number text-center bg-gray-1"
+                      class="input-number form-control text-center bg-gray-1"
                       value="1"
                       min="1"
-                      max="100"
+                      max="10"
+                      size="4"
                     />
                     <span class="input-group-btn bg-gray-2">
                       <button
@@ -1002,7 +996,7 @@
                     type="submit"
                     name="add"
                     id="add-to-cart"
-                    class="btn btn-lg btn-outline-dark btn-bg-light text-uppercase mt-5 rounded-pill fw-bold"
+                    class="btn btn-lg btn-outline-dark btn-bg-light text-uppercase mt-5 fw-bold"
                   >
                     Order Now
                   </button>
@@ -1026,7 +1020,7 @@
                   <label for="firstName" class="form-label">Your name</label>
                   <input
                     type="text"
-                    class="form-control bg-gray-1 fst-italic rounded-0"
+                    class="form-control bg-gray-1 fst-italic"
                     id="firstName"
                     placeholder="Write your name here"
                     value=""
@@ -1040,7 +1034,7 @@
                   <label for="email" class="form-label">Your email</label>
                   <input
                     type="email"
-                    class="form-control bg-gray-1 fst-italic rounded-0"
+                    class="form-control bg-gray-1 fst-italic"
                     id="email"
                     placeholder="Write your email here"
                   />
@@ -1052,7 +1046,7 @@
                   <label for="email" class="form-label">Your message</label>
                   <textarea
                     type="email"
-                    class="form-control bg-gray-1 fst-italic rounded-0"
+                    class="form-control bg-gray-1 fst-italic"
                     id="email"
                     placeholder="Write message"
                   ></textarea>
@@ -1062,7 +1056,7 @@
                 </div>
               </div>
               <button
-                class="btn btn-primary btn-lg mt-5 rounded-pill text-uppercase"
+                class="btn btn-primary btn-lg mt-5 text-uppercase"
                 type="submit"
               >
                 Order Now
@@ -1165,11 +1159,11 @@
     <script src="static/js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="static/js/plugins.js"></script>
     <script src="static/js/script.js"></script>
   </body>
